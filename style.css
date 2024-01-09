@@ -1,0 +1,165 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100vw;
+
+}
+
+.page1{
+    height: 110vh;
+    width: 96vw;
+    /* background-color: aqua; */
+    background-image: url(https://assets.website-files.com/61959d11450e437c77f8910f/61959ea27cc85b5627ae7a6c_hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.nav{
+    height: 15vh;
+    width: 40vw;
+    /* border: 2px solid red; */
+   display: flex;
+   align-items: center;
+   padding-left: 60px;
+}
+
+
+
+.hero-content{
+  height: 95vh;
+  width: 40vw;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
+.hc-top{
+    height: 50%;
+    width: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right:30px ;
+}
+
+.hc-bottom{
+
+    height: 50%;
+    width: 100%;
+    /* background-color: lightgreen; */
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: px;
+  padding-left:60px;
+  padding-top:10px ;
+  
+
+}
+
+.hc-bottom>h1{
+ font-size: 32px;
+ font-weight: 600;
+ width: 90%;
+}
+
+.hc-bottom>button{
+    height: 40px;
+    width: 210px;
+    background-color: rgb(211, 96, 96);
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+}
+
+  button:hover{
+background-color: black;
+}
+
+/* .forresponsive{
+display: none;
+} */
+
+
+@media (max-width:600px) {
+
+    .page1{
+        width: 100vw;
+        background-position: 30.5% 50%;
+    }
+
+    .nav{
+        padding-left: 20px;
+    }
+
+    .hero-content{
+        height: 95vh;
+        width: 100vw;
+        /* border: 2px solid blue */
+      }
+
+      /* .hc-bottom>.main{
+        display: none;
+      } */
+
+      /* .forresponsive{
+        font-size: 40px;
+        line-height: 30px;
+        display: initial;
+        width: 120%;
+    } */
+
+    .hc-top{
+        padding-right:0px ;
+        justify-content: center;
+    }
+
+    .hc-top>img{
+        height:100%;
+        width: 90%;
+    }
+
+    .hc-bottom{
+        /* background-color: aqua; */
+        width: 100%;
+        padding-left:-40px;
+        padding-right: 70px;     
+    }
+
+   
+    .hc-bottom>h1{
+        width: 120%;
+        margin-top: -20px;
+        line-height: 30px;
+       }
+
+
+}
+
+
+
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(211, 93, 93, 0.297);
+    margin-top: 10px;
+}

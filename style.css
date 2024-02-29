@@ -16,6 +16,86 @@ body {
   width: 100vw;
 }
 
+/* ---------------------------------------menu-page------------------------------------------------------------ */
+
+.menupage{
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff9ec;
+  display: none;
+  position: fixed;
+}
+
+.menupage>.nav{
+  height: 10%;
+  width: 100%;
+  /* background-color: blue; */
+  position: relative;
+}
+
+.nav> .menu-close{
+
+  width: 50px;
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  /* background-color: #b9b8e4; */
+
+}
+
+.nav-content{
+ height: 80vh;
+  width: 100vw;
+  /* background-color: aqua; */
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:start;
+}
+
+.navlinks{
+  height: 80vh;
+  width: 30vw;
+  /* background-color: greenyellow;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  gap: 20px;
+  pointer-events: all;
+  position: absolute;
+  /* left: 30%; */
+
+}
+.navlinks>a{
+  font-size: 35px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  letter-spacing: .5px;
+  
+}
+
+.navlinks>a:hover, .navlinks>h4>a:hover{
+  color:#b86682;
+}
+
+.navlinks>h4{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 35px;
+  pointer-events: all;
+}
+.navlinks>h4>a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* ---------------------------------------menu-page----------------------------------------------------------- */
+
+
+
 /* ----------------------------------------page-1----------------------------------------------------------- */
 .page1 {
   height: 110vh;
@@ -36,6 +116,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 60px;
+  cursor: pointer;
 }
 
 .hero-content {
@@ -80,7 +161,7 @@ body {
 button {
   height: 40px;
   width: 210px;
-  background-color: rgb(211, 96, 96);
+  background-color: #b86682;
   border-radius: 50px;
   outline: none;
   border: none;
@@ -88,6 +169,7 @@ button {
   font-weight: 600;
   color: white;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -367,7 +449,498 @@ flex-direction: row-reverse;
 .page4{
   height: 100vh;
   width: 100vw;
-  background-color: green;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  gap: 12px;
+  /* border: 2px solid red; */
 }
 
+.page4>.top{
+  height: 15vh;
+  width: 90vw;
+  /* background-color: cadetblue; */
+}
+
+.page4>.top>h1{
+  font-size: 35px;
+  width: 90%;
+  border-left:4px solid #ede1bf;
+  /* background-color: #b9b8e4; */
+  padding-left: 25px;
+}
+
+.page4>.mid{
+  height: 10vh;
+  width: 90vw;
+  /* background-color: rgb(139, 147, 221); */
+}
+
+.page4>.mid>p{
+  font-size: 23px;
+  color: #636363;
+  padding-left: 28px;
+
+}
+
+.page4>.bottomfood{
+  height: 75vh;
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+gap: 20px;
+
+}
+
+.page4>.bottomfood>.bottom-left, .page4>.bottomfood>.bottom-right{
+height: 70%;
+width: 44%;
+/* background-color: aqua; */
+/* border: 1px solid black; */
+display: flex;
+
+}
+
+.bottom-left>.left ,.bottom-left>.right{
+  height: 100%;
+width: 50%;
+/* border: 1px solid rgb(210, 72, 72); */
+}
+
+.bottom-left>.right{
+  background-color:  #eee;
+
+}
+
+.bottom-right>.left ,.bottom-right>.right{
+  height: 100%;
+width: 50%;
+  background-color:  #eee;
+/* border: 1px solid rgb(210, 72, 72); */
+
+}
+
+.left>.top, .left>.bottom {
+  height: 60%;
+  width: 100%;
+  /* background-color: rgb(209, 112, 194); */
+}
+
+.left>.bottom {
+  height:40%;
+
+  background-color: #afcfe7;;
+  display: flex;
+  flex-direction: column;
+}
+
+.left>.top>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.left>.bottom>.nutrition-heading{
+  height: 45%;
+  width: 100%;
+  /* background-color: #b9b8e4; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+}
+.nutrition-heading>h4{
+
+  font-size: 20px;
+
+
+}
+
+.left>.bottom>.nutrition-value{
+  height: 60%;
+  width: 100%;
+  /* background-color: #f5f5f7; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  
+
+}
+
+
+.calories>span, .Protein>span, .carbs>span{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.calories>p, .Protein>p, .carbs>p{
+
+  padding-top: 5px;
+
+}
+
+
+.right>.top{
+  height: 25%;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.right>.top>h3{
+
+  width: 90%;
+
+}
+.right>.line{
+  height: 1%;
+  width: 40%;
+ border: 1.5px solid black;
+color: black;
+margin-left: 13px;
+
+}
+.right>.mid{
+  height: 60%;
+  width: 100%;
+  /* background-color: rgb(134, 189, 228); */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  color: #636363;
+
+}
+
+.mid>h4{
+   font-size: 18px;
+   padding-left: 15px;
+}
+.mid>ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 40px;
+}
+
+.right>.bottom{
+  height: 14%;
+  width: 100%;
+  /* background-color: rgb(218, 151, 147); */
+  display: flex;
+  align-items: center;
+}
+
+.right>.bottom>a{
+
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 13px;
+
+
+}
 /* ----------------------------------------page-4----------------------------------------------------------- */
+
+/* ----------------------------------------page-5----------------------------------------------------------- */
+
+
+.page5{
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid rgb(84, 234, 46); */
+  background-color: red;
+
+}
+
+.content-page5{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(80, 180, 230);
+  background-image: url(https://assets.website-files.com/61959d11450e437c77f8910f/6195d00fe6364eaf8a3cb722_CTA%20Image.jpg);
+  background-size: cover;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+
+
+}
+
+.content-page5>.top, .content-page5>.mid{
+  padding-left: 50px;
+}
+
+.bottom-page5{
+
+  height: 50%;
+  width: 50%;
+  /* background-color: bisque; */
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.box1-page5,.box2-page5,.box3-page5,.box4-page5{
+  height: 80%;
+  width: 24%;
+  /* background-color: rgb(120, 189, 67); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+
+}
+
+.circle-page5{
+  height: 100px;
+  width: 100px;
+  /* border: 1px solid black; */
+  border-radius: 100px;
+
+}
+
+
+.box1-page5>h3{
+  width: 70%;
+  font-weight: 200;
+}
+
+.bottom2-page5{
+
+  height: 15%;
+  width: 50%;
+  /* background-color: red; */
+  margin-left: 50px;
+  position: relative;
+}
+.bottom2-page5>button{
+  position: absolute;
+  top: -30%;
+  left: 10px;
+}
+
+
+
+
+
+/* .hover{
+    animation: popup .8s linear 5;
+}
+@keyframes popup {
+    0%{
+       scale: 1;
+
+    }
+    25%{
+      scale: 1.2;
+
+    }
+    50%{
+      scale: 1;
+
+    }
+    75%{
+      scale: 1.2;
+
+    }
+    100%{
+      scale: 1;
+
+
+    }
+} */
+
+
+/* ----------------------------------------page-6----------------------------------------------------------- */
+
+
+.page6{
+  height: 120vh;
+  width: 100vw;
+  /* border: 2px solid rgb(219, 66, 221); */
+   background-color: #fff9ec;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.top-p6{
+  height: 30vh;
+  width: 100%;
+  /* background-color: #dfb0c0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.top-p6>h1{
+  font-size: 35px;
+}
+
+
+
+.top-p6>p{
+  font-size: 22px;
+  color: #636363;
+
+}
+
+form{
+  height: 40vh;
+  width: 100%;
+  /* background-color: rgb(164, 116, 116); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.inputs{
+  height: 90%;
+  width: 90%;
+  /* background-color: #d56969; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input, select{
+  height:30%;
+  width: 80%;
+  outline: none;
+  border: none;
+  border-bottom: .5px solid black;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+input::placeholder, select, select>option{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.left-input{
+  height: 100%;
+  width: 50%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.right-input{
+  height: 100%;
+  width: 50%;
+  /* background-color: rgb(109, 209, 123); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.bottom-p6{
+  height: 30vh;
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  text-align: center;
+
+}
+.bottom-p6>button{
+  margin-top: 0px;
+}
+.bottom-p6>p{
+  margin-top: 10px;
+  font-size: 16px;
+  width: 52%;
+  color: #636363;
+ 
+}
+
+.bottom-p6>h3{
+  color: #636363;
+}
+
+.bottom-p6>h3>a{
+text-decoration: none;
+color:#b86682;
+}
+
+.bottom-p6>h3>a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+
+/* <!-- ----------------------------------page-6----------------------------------------------------------------> */
+
+/* <!-- ---------------------------------- footer  ----------------------------------------------------------------> */
+
+.footer{
+  height: 40vh;
+  width: 100vw;
+  /* background-color: white; */
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+
+}
+.footer-left, .footer-right{
+  height: 100%;
+  width: 30%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+}
+
+
+
+
+.footer-right{
+  width: 30%;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+}
+
+.footer-right>p{
+  font-size: 20px;
+width: 58% ;
+/* margin-top: 50px; */
+}
+
+/* <!-- ---------------------------------- footer  ----------------------------------------------------------------> */
+
